@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name ='viewport' content="width=device-width, initial-scale = 1.0">
         <title>Ethan Grim's Projects</title>
         <link rel ="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +14,7 @@
         
         <section class="block">
             <nav>
-                <div class="nav-links">
+                <div class="nav-links" id = "navLinks">
                     <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="index.html">HOME</a></li>
@@ -27,12 +28,31 @@
             </nav>
             <div class="text-box">
                 <h1>PROJECTS</h1>
-                <h2>hi</h2>
             </div>
             
         </section>
+        <!---PROJECT BOXES--->
+        <section class="projectBox">
+            <h1>My Recent Projects</h1>
+            <p>A collection of information about projects I have had a hand in or contributed solely to.</p>
+            <div class="row">
+                <div class="projectIcon" id="Me-Lody">
+                    <h1>Me-Lody</h1>
+                    <p>My first attempt at an app</p>
+                </div>
+            </div>
+        </section>
         
-
+        <script>
+            var navLinks = document.getElementById('navLinks');
+    
+            function showMenu(){
+                navLinks.style.right = '0'
+            }
+            function hideMenu(){
+                navLinks.style.right = '-200px'
+            }
+        </script>  
     </body>
 
 </html>
