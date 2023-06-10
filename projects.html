@@ -1,58 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name ='viewport' content="width=device-width, initial-scale = 1.0">
-        <title>Ethan Grim's Projects</title>
-        <link rel ="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">    
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">        
-        
-    </head>
-    <body>
-        
-        <section class="block">
-            <nav>
-                <div class="nav-links" id = "navLinks">
-                    <i class="fa fa-times" onclick="hideMenu()"></i>
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="projects.html">PROJECTS</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
-                    </ul>
-                    
-                </div>
-                <i class="fa fa-bars" onclick="showMenu()" id ="menu"></i>
-            </nav>
-            <div class="text-box">
-                <h1>PROJECTS</h1>
+
+<head>
+    <meta name='viewport' content="width=device-width, initial-scale = 1.0">
+    <title>Ethan Grim's Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <section class="block">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+
             </div>
-            
-        </section>
-        <!---PROJECT BOXES--->
-        <section class="projectBox">
-            <h1>My Recent Projects</h1>
-            <p>A collection of information about projects I have had a hand in or contributed solely to.</p>
-            <div class="row">
-                <div class="projectIcon" id="Me-Lody">
+            <i class="fa fa-bars" onclick="showMenu()" id="menu"></i>
+        </nav>
+        <div class="text-box">
+            <h1>PROJECTS</h1>
+        </div>
+
+    </section>
+    <!---PROJECT BOXES--->
+    <section class="projectBox">
+        <h1>My Recent Projects</h1>
+        <p>A collection of information about projects I have had a hand in or contributed solely to.</p>
+        <div class="row">
+            <a href="Me-Lody.html">
+                <div class="projectIcon" id="Me-LodyProjectBox" onclick="">
                     <h1>Me-Lody</h1>
                     <p>My first attempt at an app</p>
                 </div>
-            </div>
-        </section>
-        
-        <script>
-            var navLinks = document.getElementById('navLinks');
-    
-            function showMenu(){
-                navLinks.style.right = '0'
-            }
-            function hideMenu(){
-                navLinks.style.right = '-200px'
-            }
-        </script>  
-    </body>
+            </a>
+        </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById('navLinks');
+
+        function showMenu() {
+            navLinks.style.right = '0'
+        }
+        function hideMenu() {
+            navLinks.style.right = '-200px'
+        }
+    </script>
+</body>
 
 </html>

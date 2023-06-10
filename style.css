@@ -95,6 +95,7 @@ nav .fa{
     background-position: center;
     position:relative;
 }
+
 .projectBox{
     min-height: 100vh;
     width: 100%;
@@ -116,8 +117,9 @@ nav .fa{
     flex-direction: row;
     justify-content: space-between;
     display: flex;
-
-    
+}
+.row a{
+    text-decoration: none;
 }
 .projectIcon{
     max-width: 300px;
@@ -153,22 +155,85 @@ nav .fa{
     color:rgba(0,0,0,1)
 }
 
-#Me-Lody{
+#Me-LodyProjectBox{
     background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0) ), url(images/melodyPDF.jpg);
     background-size: cover;
     background-position: center;
     transition: 0.5s;
 
 }
-#Me-Lody:hover{
+#Me-LodyProjectBox:hover{
     background-image: linear-gradient(rgba(255, 255, 255, .7),rgba(255, 255, 255, .7)), url(images/melodyPDF.jpg );
 }
 
 
+/*Specific Project Pages*/
+#Me-Lody{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url(images/melodyPDF.jpg);
+}
+#MeLodyHome{
+    height:75vh;
+    margin: 15px;
+    border: 5px rgba(50,50,50,0.2) solid;}
+.projectInfo{
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+}
+.projectInfo h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 10px;
+}
+.projectInfo h2{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.pitch{
+    flex:3;
+    margin: 15px;
+}
+.contributor{
+    flex:1;
+    padding-left: 10px;
+    padding-bottom:10px;
+    margin: 15px;
+    background-color: rgb(204, 197, 244 );
+
+}
+.contributor ul li{
+    list-style-type: none;
+}
+.contributions{
+    flex:2;
+}
+.contributions a .fa{
+    display: block;
+    font-size: 50px;
+    color: #121212;
+    margin:10px;
+}
+#kalturaVideo{
+    width:fit-content;
+    margin: 10px auto;
+
+}
+.video{
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    display: block;
+    margin:10px;
+}
+.video p{
+    margin:0 20px;
+}
+
 @media(max-width:700px){
     .text-box h1{
-        font-size: 20px;
+        font-size: 30px;
     } 
+
     .nav-links ul li{
         display: block;
     }
@@ -210,6 +275,25 @@ nav .fa{
         font-size: 14px;
         margin:10px;
     }
+
+/*Specific Project Pages*/
+    .row{
+        flex-direction: column;
+    }
+    .contributor{
+        text-align: center;
+    }
+    .pitch h2{
+        text-align: center;
+    }
+    #MeLodyHome{
+        width: 0;
+        height:0;
+        margin: 0;
+        border:0;
+        align-self: center;
+    }
+
 
     html, body {overflow-x: hidden;}
 }

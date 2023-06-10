@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name ='viewport' content="width=device-width, initial-scale = 1.0">
+        <title>Me-Lody</title>
+        <link rel ="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">    
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">        
+        
+    </head>
+    <body>
+        <section class="block" id="Me-Lody">
+            <nav>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                    
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()" id ="menu"></i>
+            </nav>
+            <div class="text-box">
+                <h1>ME-LODY</h1>
+                <h3>React Native App</h3>
+            </div>
+        </section>
+        <section class="projectInfo">
+            <h1>THE PROJECT</h1>
+
+            <div class="row">
+                <div class="pitch">
+                    <h2>The Pitch</h2>
+                    <p>
+                        Our product is similar to the app BeReal. Instead of posting a picture once a day, our app is related to music. Once you download the app, the user would connect to their preferred music streaming platform. At a random time each day, a notification will be sent out informing the user that it's time to share your music with your friends. If you are currently listening to a song, the app will prompt the user if it is okay to post their song for those they have mutually added to see. If the user is not listening to music, the app will instead ask if it is okay to post their last listened to song.
+                    </p>
+                </div>
+                <div class="contributor">
+                    <h2>Contributors</h2>
+                    <ul>
+                        <li>Ethan Grim</li>
+                        <li>Joe Manall</li>
+                        <li>Alex Spetseris</li>
+                        <li>Jason Nguyen</li>
+                    </ul>
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>Tyepscript</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <img src = "images/HomeScreenMeLody.jpg" id="MeLodyHome">
+                <div class = "contributions">
+                    <h2>My Contributions</h2>
+                    <p>I worked primarily on the front end of the app. One concept I implemented in the app is object oriented programming. This was used in various places of the app. For one, when creating the actual post of the app. 
+                        information from the text inputs are used as paramters for an instance of what we called a "post". This object held a couple pieces of information such as the poster's username, the song information, the 
+                        time of the post, as well as the associated picture. This information is then used in a function called card() which uses the information and formats it in a React view which is then returned and shown on the main page.
+                    I also did something similar with our friend system in which each account was its own instance of the Friend class and had a funciton in order to make the card which is displayed on the screen. </p>
+                    <h2>Plans For The App</h2>
+                    <p>We have no plans to continue with this app. If I was to try to create this app again I would likely start from scratch. I do not think that the coding that was done on it is of high enough quality to accomplish what we wanted to.
+                        I also think that the language was a big contributor to it being hard for us. Javascript may have been a better base for us to use than Tyepscript. This choice was made as the navigation was already created in a Typescript 
+                        template. The decision to do this was made as a result of the 
+                    </p>
+                    <a href="https://github.com/ethang17/Me-Lody">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class ="video">
+                <h2>Our Final Presentation</h2>
+                <p>This video was created in order to demonstrate the app to our peers and professors. It focuses mainly on the process of creating the app, but also has a customer demonstration within it.</p>
+                <div id="kalturaVideo">
+                    <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1513041/sp/151304100/embedIframeJs/uiconf_id/43882971/partner_id/1513041?iframeembed=true&playerId=kaltura_player&entry_id=1_bwx5jy0t&flashvars[localizationCode]=en&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_y9sc5gmw" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="62-05 Me-Lody" ></iframe>
+                </div>
+            </div>
+
+        </section>
+        <script>
+            var navLinks = document.getElementById('navLinks');
+    
+            function showMenu() {
+                navLinks.style.right = '0'
+            }
+            function hideMenu() {
+                navLinks.style.right = '-200px'
+            }
+        </script>
+    </body>
+</html>
